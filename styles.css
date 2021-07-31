@@ -1,0 +1,82 @@
+body{
+    background-color: black;
+}
+img{
+    height: 400px;
+    width: 601px;
+    border: solid black 1px;
+}
+h1{
+    color:#01FF70;
+   text-align: center;
+   
+}
+.carousel{
+   width: 100%;
+   margin-top: 100px;
+}
+.carousal-image{
+        height: 400px;
+        width: 550px;  
+        overflow: hidden;      
+      margin-left: auto;
+      margin-right: auto;
+      display: none;
+}
+.image-visible{
+    display: block;
+    animation: animateVisibility 0.5s;
+}
+.action-buttons{
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top:50%;
+    display: flex;
+   color: transparent;
+}
+button{
+   cursor: pointer;
+   margin: 30px 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: transparent;
+    color: teal;
+    border: solid teal 0.5px;
+    
+}
+.selected-dot{
+    background-color: teal;
+    
+   
+}
+.dots{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+.navigate-dot{
+    height: 8px;
+    width:8px;
+    color: white;
+    border: solid teal 1px !important;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@keyframes animateVisibility{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}

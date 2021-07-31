@@ -1,0 +1,28 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <h1><i>Carousel / Slider</i></h1>
+    <body>
+        <div class="carousel">
+            <div class="carousal-image image-visible">
+                <img src="./img1.jpg">
+            </div>
+            <div class="carousal-image">
+                <img src="./img2.jpg">
+            </div>
+           <div class="carousal-image">
+            <img src="./img3.jpg">
+           </div>
+        </div>
+       <div class="action-buttons">
+        <button id="left-button"><strong><</strong></button>
+        <button id="right-button">></button>
+       </div>
+       <div class="dots">
+            <span class="navigate-dot selected-dot" onclick="updateImageShown(0)"> </span>&nbsp;&nbsp;
+            <span class="navigate-dot"  onclick="updateImageShown(1)"> </span>&nbsp;&nbsp;
+            <span class="navigate-dot" onclick="updateImageShown(2)"> </span>
+
+       </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
